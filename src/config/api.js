@@ -7,7 +7,7 @@ console.log(envVer)
 // 局域网测试使用
 // var WxApiRoot = 'http://localhost:8082/wx/';
 // 云平台部署时使用
-var WxApiRoot = 'https://shop.andmedia.cn/wx/';
+// var WxApiRoot = 'https://shop.andmedia.cn/wx/';
 
 switch (envVer) {
   case 'develop':
