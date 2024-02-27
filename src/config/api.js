@@ -13,14 +13,14 @@ switch (envVer) {
   case 'develop':
     // WxApiRoot = 'https://127.0.0.1:8000/'
     // WxApiRoot = 'http://localhost:8000/'
-    WxApiRoot = 'https://192.168.122.1:8000/'
+    WxApiRoot = 'https://192.168.122.1:8000/api/'
     // WxApiRoot = 'https://shiliu.dev.itove.com/'
     break
   case 'trial':
-    WxApiRoot = 'https://shiliu.dev.itove.com/'
+    WxApiRoot = 'https://shiliu.dev.itove.com/api/'
     break
   case 'release':
-    WxApiRoot = 'https://shiliu.itove.com/';
+    WxApiRoot = 'https://shiliu.itove.com/api/';
     break
 }
 
