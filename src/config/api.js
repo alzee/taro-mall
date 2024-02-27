@@ -1,3 +1,5 @@
+import Taro from '@tarojs/taro'
+
 let envVer = Taro.getAccountInfoSync().miniProgram.envVersion
 console.log(envVer)
 
