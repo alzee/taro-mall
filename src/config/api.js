@@ -1,8 +1,26 @@
+let envVer = Taro.getAccountInfoSync().miniProgram.envVersion
+console.log(envVer)
+
 // 以下是业务服务器API地址
 // 局域网测试使用
 // var WxApiRoot = 'http://localhost:8082/wx/';
 // 云平台部署时使用
 var WxApiRoot = 'https://shop.andmedia.cn/wx/';
+
+switch (envVer) {
+  case 'develop':
+    // WxApiRoot = 'https://127.0.0.1:8000/'
+    // WxApiRoot = 'http://localhost:8000/'
+    WxApiRoot = 'https://192.168.122.1:8000/'
+    // WxApiRoot = 'https://shiliu.dev.itove.com/'
+    break
+  case 'trial':
+    WxApiRoot = 'https://shiliu.dev.itove.com/'
+    break
+  case 'release':
+    WxApiRoot = 'https://shiliu.itove.com/';
+    break
+}
 
 export default {
   IndexUrl: WxApiRoot + 'home/index', //首页数据接口
